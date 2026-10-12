@@ -5,15 +5,16 @@
 
 
 import pandas as pd
+from pathlib import Path
 
+# Load the dataset from the project directory
+project_dir = Path(__file__).resolve().parent
+dataset_path = project_dir / "netflix_titles.csv"
 
-# In[3]:
+raw_df = pd.read_csv(dataset_path)
 
-
-raw_df = pd.read_csv(
-    r"C:\Users\admin\Desktop\Project Datasets\netflix_titles.csv"
-)
-
+print("Dataset loaded successfully.")
+print(f"Dataset shape: {raw_df.shape}")
 
 # In[4]:
 
