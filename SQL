@@ -1,0 +1,52 @@
+# SQL Analysis
+
+## Overview
+
+I used PostgreSQL to analyse the Netflix titles dataset and answer questions about its content library.
+
+The analysis focused on content types, release years, genres, countries, ratings, and movie durations. I used SQL queries to aggregate the data and identify patterns that could be explored further in Power BI.
+
+## What I Analysed
+
+The SQL analysis covered the following areas:
+
+- Distribution of movies and TV shows
+- Number of titles by release year
+- Content ratings and their distribution
+- Country-wise content associations
+- Most common genres
+- Movie duration and TV show seasons
+- Content added to Netflix over time
+- Comparison of movies and TV shows across release years
+
+## Data Preparation
+
+During the analysis, I also examined missing values and checked the consistency of certain fields.
+
+Some titles were associated with multiple countries or genres. I used PostgreSQL string-splitting techniques to analyse these categories separately.
+
+I also corrected three records where movie duration values appeared in the rating column.
+
+## Database Details
+
+- Database: `netflix_project`
+- Table: `netflix`
+- Database system: PostgreSQL
+
+## SQL Files
+
+The SQL queries used for this analysis will be organised into separate files so that each part of the analysis is easy to understand and review.
+
+## How to Run the Queries
+
+1. Set up PostgreSQL.
+2. Import the Netflix dataset into a database.
+3. Create the `netflix` table using the appropriate column names and data types.
+4. Open the SQL files in pgAdmin or another PostgreSQL client.
+5. Execute the queries against the imported table.
+
+Make sure the table and column names match those used in the queries.
+
+## Note
+
+The analysis is based on the dataset used for this project. The results describe that dataset and should not be treated as current Netflix catalog statistics.
